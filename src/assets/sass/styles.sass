@@ -1,0 +1,183 @@
+@import 'fonts'
+
+@import 'foundation'
+@import 'settings/settings'
+@import 'components/alignment'
+@import 'components/media-query'
+
+
+.container
+  overflow: hidden
+
+.no-bg
+  background-color: transparent !important
+
+.bg-blue
+  background-color: $blue !important
+
+.bg-white
+  background-color: #FFFFFF !important
+
+.custom-pb
+  padding-bottom: 10px !important
+
+.text-uppercase
+  text-transform: uppercase
+
+.btn
+  display: inline-block
+  padding: 18px 30px
+  color: #FFFFFF
+  font-size: 16px
+  font-weight: 600
+  text-decoration: none !important
+  background-color: $button-background
+  border-radius: 60px
+  box-sizing: border-box
+  cursor: pointer
+
+.title
+  margin: 0
+  color: $black
+  font-size: 32px
+
+.txt
+  color: #D8D8D8
+  font-size: 16px
+  font-weight: 200
+  line-height: 160%
+  position: relative
+  z-index: 3
+
+  &--black
+    color: $black
+
+.link
+  color: $black
+  text-decoration: underline
+
+  &:hover
+    color: $accent
+
+.btn-success
+  padding: 15px 26px
+  display: inline-block
+  color: $white
+  font-size: 16px
+  font-weight: 600
+  border-radius: 4px
+  background: $accent
+  cursor: pointer
+
+h1
+  color: #FFFFFF
+  font-size: 32px
+  line-height: 120%
+
+h2,
+h3,
+h4
+  color: #FFFFFF
+  font-size: 22px
+  font-weight: 600
+
+a
+  color: #FFFFFF
+  text-decoration: underline
+  white-space: nowrap
+  position: relative
+  z-index: 3
+
+  &:active
+    color: $accent
+
+hr
+  border-bottom: 1px solid #EEEEEE
+
+
+.header
+  background: #FFFFFF
+  border-bottom: 1px solid $light-gray
+
+  &__col-2
+    vertical-align: middle
+
+    th
+      text-align: right
+
+  &__txt
+    th
+      color: $gray
+      font-size: 12px
+
+.header-phone
+  color: $black
+  font-size: 16px
+  font-weight: 550
+  text-decoration: none
+
+  &:hover
+    color: $accent
+
+.logo
+  width: 120px
+
+.main
+  position: relative
+
+  &__title
+    font-size: 32px
+    position: relative
+    z-index: 3
+
+  &__txt
+    color: #D8D8D8
+    font-size: 16px
+    font-weight: 200
+    line-height: 160%
+    position: relative
+    z-index: 3
+
+.contacts
+  &__title
+    color: $black
+    font-weight: 800
+
+  .txt
+    font-weight: 500
+
+  a
+    color: $accent
+
+.contacts-list
+  margin: 0
+  padding: 0 0 0 20px
+
+
+@media only screen and (max-width: #{$global-breakpoint})
+  .header
+    &__col-2
+      th
+        text-align: left
+
+    &__txt
+      th
+        color: $gray
+        font-size: 10px !important
+
+  .logo
+    width: 100px
+
+  td.small-6, th.small-6,
+  td.small-5, th.small-5,
+  td.small-4, th.small-4,
+  td.small-3, th.small-3,
+  td.small-2, th.small-2,
+  td.small-1, th.small-1
+    display: table-cell !important
+
+  .space
+    padding-bottom: 0px !important
+    margin-bottom: 0px !important
+    padding-left: 4px !important
+    padding-right: 4px !important
