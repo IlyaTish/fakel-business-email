@@ -58,7 +58,7 @@ gulp.task('watch', () => {
   browserSync.init({
     server: {
       baseDir: [ 'dist' ],
-      index:   'basic.html'
+      index:   'index.html'
     },
     port: 3000
   });
