@@ -1531,21 +1531,25 @@ hr {
   width: 120px; }
 
 .main {
-  position: relative; }
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("assets/img/bg.jpg"); }
   .main__title {
     font-size: 32px;
     position: relative;
     z-index: 3; }
 
-.contacts__title {
-  color: #282828;
-  font-weight: 800; }
-
-.contacts .txt {
-  font-weight: 500; }
-
-.contacts a {
-  color: #B10D09; }
+.contacts {
+  background-color: transparent; }
+  .contacts__title {
+    color: #282828;
+    font-weight: 800; }
+  .contacts .txt {
+    font-weight: 500; }
+  .contacts a {
+    color: #B10D09; }
 
 .contacts-list {
   margin: 0;
